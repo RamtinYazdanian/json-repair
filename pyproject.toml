@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "json_repair"
+version = "0.1.0"
+authors = [
+  { name="Ramtin Yazdanian", email="ramtin.yazdanian@epfl.ch" }
+]
+description = "Lightweight JSON repairer that can fix issues such as missing quotations, commas, etc."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/RamtinYazdanian/json-repair"
+"Bug Tracker" = "https://github.com/RamtinYazdanian/json-repair/issues"
