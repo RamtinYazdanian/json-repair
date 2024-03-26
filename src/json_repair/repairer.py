@@ -90,9 +90,10 @@ def repair_json(text):
 
         return i > start
 
-    def parse_whitespace():
+    def parse_whitespace(verbose=False):
         nonlocal i, output
-        print(i, output)
+        if verbose:
+            print(i, output)
         whitespace = ''
         while is_whitespace(char_code_at(text, i)) or is_special_whitespace(char_code_at(text, i)):
             if is_whitespace(char_code_at(text, i)):
