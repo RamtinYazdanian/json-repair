@@ -66,7 +66,7 @@ escape_characters = {
 }
 
 
-def repair_json(text):
+def repair_json(text, verbose=False):
     i = 0  # current index in text
     output = ''  # generated output
 
@@ -90,7 +90,7 @@ def repair_json(text):
 
         return i > start
 
-    def parse_whitespace(verbose=False):
+    def parse_whitespace():
         nonlocal i, output
         if verbose:
             print(i, output)
